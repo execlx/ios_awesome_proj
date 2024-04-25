@@ -164,6 +164,7 @@
 				C2F7AE9F2BD76910006BE563 /* Frameworks */,
 				C2F7AEA02BD76910006BE563 /* Resources */,
 				2B8FDF1EE020B58837A426B2 /* [CP] Embed Pods Frameworks */,
+				C2A293022BDA25F6006B72E3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -338,6 +339,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios_awesome_proj/Pods-ios_awesome_proj-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C2A293022BDA25F6006B72E3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		E7F3A2787C1DCE6D56CA3EC5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

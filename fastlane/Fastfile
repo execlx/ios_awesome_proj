@@ -1,0 +1,39 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  private_lane :getpi do
+    pi = 3.21
+    pi
+  end
+  lane :foo do 
+    pi = getpi
+    puts(pi)
+  end
+  lane :code_lint do
+    swiftlint(
+    mode: :lint,      # SwiftLint mode: :lint (default) or :autocorrect
+    config_file: "../ios_awesome_proj/.swiftlint.yml",     # The path of the configuration file (optional)
+    raise_if_swiftlint_error: false,      # Allow fastlane to raise an error if swiftlint fails
+    ignore_exit_status: true    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
+)
+end
+
+
+
+end

@@ -1,0 +1,12 @@
+//
+//  base.xcconfig
+//  ios_awesome_proj
+//
+//  Created by codermy on 2024/4/26.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+TARGETED_DEVICE_FAMILY = 1
+IPHONEOS_DEPLOYMENT_TARGET = 14.0

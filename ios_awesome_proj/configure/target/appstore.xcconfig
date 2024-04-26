@@ -1,0 +1,12 @@
+//
+//  appstore.xcconfig
+//  ios_awesome_proj
+//
+//  Created by codermy on 2024/4/26.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "../project/appstore_project.xcconfig"
+
+PRODUCT_BUNDLE_NAME = $(inherited) appstore
